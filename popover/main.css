@@ -1,0 +1,79 @@
+.popover {
+  padding: 2px;
+  position: absolute;
+  top: -20px;
+  left: 50px;
+  display: block;
+  visibility: visible;
+  
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+          
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.03);
+     -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.03);
+}
+
+.popover-content {
+  height: 100px;
+  width: 300px;
+  overflow: auto;
+  padding: 10px;
+  
+  background: #ffffff;
+  border: 1px solid #efefef;
+  
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.popover .arrow {
+  border-color: transparent #f9f9f9 transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: -20px;
+  top: 20px;
+}
+
+.popover .arrow-border {
+  border-color: transparent #eee transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: -22px;
+  top: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.pop-in {
+  -webkit-animation-name: pop-in;  
+  -webkit-animation-iteration-count: 1;  
+  -webkit-animation-timing-function: ease-in-out;  
+  -webkit-animation-duration: .2s;
+}
+
+@-webkit-keyframes pop-in {  
+  0% {  
+    -webkit-transform: scale(0);  
+  }  
+  50% {  
+    -webkit-transform: scale(1.2);  
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
