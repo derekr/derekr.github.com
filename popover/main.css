@@ -68,12 +68,12 @@
 
 @-webkit-keyframes pop-in {  
   0% {  
-    -webkit-transform: scale(0);  
+    -webkit-transform: scale3d(0, 0, 0);  
   }  
   50% {  
-    -webkit-transform: scale(1.2);  
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);  
   }
   100% {
-    -webkit-transform: scale(1);
+    -webkit-transform: scale3d(1, 1, 1);
   }
 }
